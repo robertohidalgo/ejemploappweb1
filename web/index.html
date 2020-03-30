@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Silvia Amorós">
+	<meta name="description" content="Formularios en HTML5 y CSS3">
+	<meta name="keywords" content="formularios, html5, CSS3">
+	<title>Lenguajes de Marcas - DAW</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Práctica 4.2 - Silvia Amorós Hernández</h1>
+		</header>
+		<main>
+			<section>
+				<form id="registro" method="post" action="PrimerServlet" >
+					<input type="hidden" name="receptor" value="silviaamoros.informatica@iespacomolla.es" />
+					<h2>Rellena el siguiente formulario de registro</h2>
+					<label for="nombre">Nombre</label><br>
+					<input type="text" id="nombre" name="nombre" size="30" maxlength="30" required autofocus><br>
+					<label for="apellidos">Apellidos</label><br>
+					<input type="text" id="apellidos" name="apellidos" size="80" maxlength="80" required><br>
+					<label for="email">Email</label><br>
+					<input type="email" id="email" name="email" required multiple><br>
+					<label for="contraseña">Contraseña</label><br>
+					<input type="password" id="contraseña" name="contraseña" size="30" maxlength="10" required autocomplete="off" pattern="\S{6,}"><br>
+					<label for="contraseña">Confirmar contraseña</label><br>
+					<input type="password" name="contraseña" size="30" maxlength="10" required autocomplete="off" pattern="\S{6,}"><br>
+					<label for="fecnac">Fecha de Nacimiento</label><br>
+					<input type="date" id="fecnac" name="fecnac"> <br>
+					<label>Sexo</label><br>
+					<input type="radio" name="sexo" value="Hombre" checked>Hombre <br>
+					<input type="radio" name="sexo" value="Mujer">Mujer <br>
+					<label for="web">Web profesional</label><br>
+					<input type="url" id="web" name="web" placeholder="http://ejemplo.com"><br>
+					<label>Experiencia del usuario</label><br>
+					<input type="range" name="rango" min="1" max="10"> <br>
+					<label>Número de teléfono</label><br>
+					<input type="tel" name="tel"><br>
+					<label for="dni">DNI</label><br>
+					<input type="text" id="dni" name="dni" size="13" maxlength="9" required><br>
+					<input type="submit" name="enviar" value="Guardar cambios">
+					<input type="reset" name="reset" value="Borrar los datos introducidos">
+				</form>
+			</section>
+		</main>
+	</div>
+</body>
+</html> 
